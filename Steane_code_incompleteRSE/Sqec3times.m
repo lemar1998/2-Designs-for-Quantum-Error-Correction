@@ -1,0 +1,10 @@
+function S = Sqec3times(Pm,Pq)
+no_error = ((1-Pq).^7) * ((1-Pm).^9)';
+nbflip_1_merror = ((1-Pq).^7) * (9*Pm.*(1-Pm).^8)';
+nbflip_2_merror = ((1-Pq).^7) * (27*Pm.^2.*(1-Pm).^7)';
+nbflip_3_merror = ((1-Pq).^7) * (27*Pm.^3.*(1-Pm).^6)';
+bflip_no_merror = (7*Pq.*(1-Pq).^6) * ((1-Pm).^9)';
+bflip_1_merror = (7*Pq.*(1-Pq).^6) * (9*Pm.*(1-Pm).^8)';
+bflip_2_merror = (7*Pq.*(1-Pq).^6) * (27*Pm.^2.*(1-Pm).^7)';
+bflip_3_merror = (7*Pq.*(1-Pq).^6) * (27*Pm.^3.*(1-Pm).^6)';
+S = no_error + nbflip_1_merror + nbflip_2_merror + nbflip_3_merror + bflip_no_merror + bflip_1_merror + bflip_2_merror + bflip_3_merror;
