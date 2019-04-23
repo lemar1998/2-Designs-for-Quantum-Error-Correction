@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{Shor1996}
+P.~W. {Shor}.
+\newblock Fault-tolerant quantum computation.
+\newblock In {\em Proceedings of 37th Conference on Foundations of Computer
+  Science}, pages 56--65, Oct 1996.
+
+\bibitem{Preskill1999}
+John Preskill.
+\newblock Fault-tolerant quantum computing.
+\newblock In Hoi-Kwong Lo, Tim Spiller, and Sandu Popescu, editors, {\em
+  Introduction to Quantum Computation and Information}. World Scientific, 1999.
+
+\bibitem{Steane1996}
+A.~M. Steane.
+\newblock Error correcting codes in quantum theory.
+\newblock {\em Phys. Rev. Lett.}, 77:793--797, Jul 1996.
+
+\bibitem{Divincenzo1996}
+David~P. DiVincenzo and Peter~W. Shor.
+\newblock Fault-tolerant error correction with efficient quantum codes.
+\newblock {\em Phys. Rev. Lett.}, 77:3260--3263, Oct 1996.
+
+\bibitem{Fujiwara2014}
+Yuichiro Fujiwara.
+\newblock Ability of stabilizer quantum error correction to protect itself from
+  its own imperfection.
+\newblock {\em Phys. Rev. A}, 90:062304, Dec 2014.
+
+\bibitem{Fujiwara2015}
+Y.~{Fujiwara}, A.~{Gruner}, and P.~{Vandendriessche}.
+\newblock High-rate quantum low-density parity-check codes assisted by reliable
+  qubits.
+\newblock {\em IEEE Transactions on Information Theory}, 61(4):1860--1878,
+  April 2015.
+
+\bibitem{Ashikhmin2014}
+A.~{Ashikhmin}, C.~{Lai}, and T.~A. {Brun}.
+\newblock Robust quantum error syndrome extraction by classical coding.
+\newblock In {\em 2014 IEEE International Symposium on Information Theory},
+  pages 546--550, June 2014.
+
+\bibitem{Crow2016}
+Daniel Crow, Robert Joynt, and M.~Saffman.
+\newblock Improved error thresholds for measurement-free error correction.
+\newblock {\em Phys. Rev. Lett.}, 117:130503, Sep 2016.
+
+\bibitem{Note1}
+2-designs are also known balanced incomplete block designs. Our sense of the
+  word 2-design is not related to quantum 2-designs, which are probability
+  distributions over quantum states.
+
+\bibitem{Gottesman1996}
+Daniel Gottesman.
+\newblock Class of quantum error-correcting codes saturating the quantum
+  hamming bound.
+\newblock {\em Phys. Rev. A}, 54:1862--1868, Sep 1996.
+
+\bibitem{NielsenChuang}
+Michael~A. Nielsen and Isaac~L. Chuang.
+\newblock {\em Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}.
+\newblock Cambridge University Press, New York, NY, USA, 10th edition, 2011.
+
+\bibitem{Pless}
+Vera Pless.
+\newblock {\em Introduction to the Theory of Error-Correcting Codes}.
+\newblock Wiley-Interscience, New York, NY, USA, 3rd edition, 1982.
+
+\bibitem{Rudolf1985}
+Rudolf Mathon and Alexander Rosa.
+\newblock Tables of parameters of bibds with r $\leq 41$ including existence,
+  enumeration and resolvability results: An update.
+\newblock {\em North-Holland Mathematics Studies}, 30:65--96, 12 1985.
+
+\bibitem{Chao2018}
+Rui Chao and Ben~W. Reichardt.
+\newblock Quantum error correction with only two extra qubits.
+\newblock {\em Phys. Rev. Lett.}, 121:050502, Aug 2018.
+
+\end{thebibliography}
