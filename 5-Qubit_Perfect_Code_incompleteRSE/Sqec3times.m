@@ -1,0 +1,12 @@
+function S = Sqec3times(Pm,Pq)
+no_error = ((1-Pq).^15) * ((1-Pm).^12)';
+no_lerror_1_merror = ((1-Pq).^15) * (12*Pm.*(1-Pm).^11)';
+no_lerror_2_merror = ((1-Pq).^15) * (nchoosek(4,2)*nchoosek(3,1)*nchoosek(3,1)*Pm.^2.*(1-Pm).^10)';
+no_lerror_3_merror = ((1-Pq).^15) * (nchoosek(4,3)*nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*Pm.^3.*(1-Pm).^9)';
+no_lerror_4_merror = ((1-Pq).^15) * (nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*Pm.^4.*(1-Pm).^8)';
+lerror_no_merror = (15*Pq.*(1-Pq).^14) * ((1-Pm).^12)';
+lerror_1_merror = (15*Pq.*(1-Pq).^14) * (12*Pm.*(1-Pm).^11)';
+lerror_2_merror = (15*Pq.*(1-Pq).^14) * (nchoosek(4,2)*nchoosek(3,1)*nchoosek(3,1)*Pm.^2.*(1-Pm).^10)';
+lerror_3_merror = (15*Pq.*(1-Pq).^14) * (nchoosek(4,3)*nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*Pm.^3.*(1-Pm).^9)';
+lerror_4_merror = (15*Pq.*(1-Pq).^14) * (nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*nchoosek(3,1)*Pm.^4.*(1-Pm).^8)';
+S = no_error + no_lerror_1_merror + no_lerror_2_merror + no_lerror_3_merror + no_lerror_4_merror + lerror_no_merror + lerror_1_merror + lerror_2_merror + lerror_3_merror + lerror_4_merror;
