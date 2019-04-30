@@ -6,4 +6,4 @@ no_lerror_4_merror = ((1-Pq).^15) * (nchoosek(15,4)*Pm.*(1-Pm).^11)';
 imagesc(Pm,Pq,Srse);
 set(gca,'YDir','normal')
 colorbar
-%% try S4 = ZZXIX
+%% try S14 = ZZXIX
