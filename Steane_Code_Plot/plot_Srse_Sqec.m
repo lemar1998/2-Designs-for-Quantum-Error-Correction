@@ -1,7 +1,7 @@
 
 fs = 22050;
-Pq = (0:(1/fs):0.01)';
-Pm = (0:(1/fs):0.01)';
+Pq = (0:(1/fs):1)';
+Pm = (0:(1/fs):1)';
 Sqec = Sqec3times(Pm,Pq);
 Srse_full = SrseOnce_full(Pm,Pq);
 Srse_one = SrseOnce_one(Pm,Pq);
@@ -11,11 +11,11 @@ Diff_one  = Srse_one - Sqec;
 ax1 = subplot(1,2,1);
 imagesc(Pm,Pq,Diff_one);
 set(gca,'YDir','normal')
-caxis([-28e-4 9e-4]);
+caxis([-0.1 0.22]);
 colorbar
 xlabel('p_m');
 ylabel('p_q');
-title('One Extra Stabilizer');
+title('Minimal Redundant Extraction (MR)');
 hold on
 plot(Pm,3*Pm/28,'--r');
 hold on
@@ -29,17 +29,17 @@ b=solve(Sqec==Srse_full,Pq);
 fplot(a(7),[0 1]);
 hold off
 pbaspect(ax1, [1 1 1]);
-Pq = (0:(1/fs):0.01)';
-Pm = (0:(1/fs):0.01)';
+Pq = (0:(1/fs):1)';
+Pm = (0:(1/fs):1)';
 ax2 = subplot(1,2,2);
 
 imagesc(Pm,Pq,Diff_full);
 set(gca,'YDir','normal')
-caxis([-28e-4 9e-4]);
+caxis([-0.1 0.22]);
 colorbar
 xlabel('p_m');
 ylabel('p_q');
-title('Full Stabilizer Group');
+title('Design-Based Redundancy (DBR)');
 hold on
 fplot(b(7),[0 1]);
 hold off
@@ -53,4 +53,4 @@ h=gcf;
 set(h,'PaperPositionMode','auto');         
 set(h,'PaperOrientation','landscape');
 set(h,'Position',[50 50 1200 800]);
-print(gcf, '-dpdf', 'Steane_Code.pdf')
+print(gcf, '-dpdf', 'Steane_Code_full_range.pdf')
