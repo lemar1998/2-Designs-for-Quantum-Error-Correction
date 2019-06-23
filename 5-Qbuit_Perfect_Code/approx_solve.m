@@ -11,7 +11,6 @@ ezplot(a(7),[0 1]);
 hold on
 ezplot(b(8),[0 1]);
 hold on
-%}
 %Pm = linspace(0,0.1,22050);
 %plot(Pm,-(- 4*Pm.^3 + 4*Pm.^2 + 3*Pm)./(- 8*Pm.^3 + 8*Pm.^2 + 6*Pm - 9),'--r');
 %plot(Pm,Pm/3,'--r');
@@ -24,3 +23,8 @@ hold on
 %solve(eqn,Pq)
 eqn = - 12*Pm^2 - 105*Pq^2 + 1 == - 105*Pq^2 + 1
 solve(eqn,Pq)
+%}
+Fqec = expand(1-Sqec);
+Frse = expand(1-Srse);
+file = fopen('polynomials.txt','w');
+fprintf(file,'%s',Fqec);
