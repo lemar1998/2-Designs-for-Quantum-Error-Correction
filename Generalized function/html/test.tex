@@ -1,0 +1,45 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
+syms Pq Pm real
+S_gen_VQbit = gen_SrseOnce_full(15,8,4,Pm,Pq);
+S_spc_VQbit = VQbit_SrseOnce_full(Pm,Pq);
+S_gen_steane = gen_SrseOnce_full(7,4,2,Pm,Pq);
+S_spc_steane = steane_SrseOnce_full(Pm,Pq);
+isequal(S_gen_VQbit,S_spc_VQbit)
+isequal(S_gen_steane,S_spc_steane)
+\end{verbatim}
+
+        \color{lightgray} \begin{verbatim}
+ans =
+
+  logical
+
+   1
+
+
+ans =
+
+  logical
+
+   1
+
+\end{verbatim} \color{black}
+    
+
+
+\end{document}
+    

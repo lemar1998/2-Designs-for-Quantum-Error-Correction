@@ -1,9 +1,25 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
 function S = gen_SrseOnce_full(v,k,lambda,Pm,Pq)
 
 b = lambda*v*(v-1)/(k*(k-1));
 r = lambda*(v-1)/(k-1);
 
-% the distance between the syndrome of no error (all 0) and any error is 
+% the distance between the syndrome of no error (all 0) and any error is
 % r, and thus results in the tolerance below
 max_tolerance_0 = floor(r / 2);
 
@@ -26,4 +42,17 @@ for i = 0:max_tolerance_1
     rate_1_qubit_error = rate_1_qubit_error + delta;
 end
 
+
 S = rate_0_qubit_error + rate_1_qubit_error;
+\end{verbatim}
+
+        \color{lightgray} \begin{verbatim}输入参数的数目不足。
+
+出错 gen_SrseOnce_full (line 3)
+b = lambda*v*(v-1)/(k*(k-1));
+\end{verbatim} \color{black}
+    
+
+
+\end{document}
+    
