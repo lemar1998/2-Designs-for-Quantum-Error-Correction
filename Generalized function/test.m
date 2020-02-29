@@ -6,3 +6,4 @@ S_gen_steane = gen_SrseOnce_full(7,4,2,Pm,Pq);
 S_spc_steane = steane_SrseOnce_full(Pm,Pq);
 isequal(S_gen_VQbit,S_spc_VQbit)
 isequal(S_gen_steane,S_spc_steane)
+generate_biplane_params(1:5)
